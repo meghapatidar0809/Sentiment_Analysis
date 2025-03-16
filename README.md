@@ -49,10 +49,56 @@ To train and test the Multinomial Naive Bayes classifier, run the following comm
 
 ```bash
 python prob1.py --sr no <5 digit SR#>
+```
 
-##  Requirements
-- Sentiment140 Dataset: https://huggingface.co/datasets/stanfordnlp/sentiment140
-- Count Vectorizer: https://github.com/yashika51/Understanding-Count-Vectorizer
-- Stemming and Lemmatization: https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html
-- TF-IDF Vectorizer: https://en.wikipedia.org/wiki/Tf-idf
-- Gini Impurity and Entropy: https://www.geeksforgeeks.org/gini-impurity-and-entropy-in-decision-tree-ml/
+---
+
+## Active Learning Strategy
+
+To run the Active Learning Strategy, execute the following command:
+
+```bash
+python prob2.py --sr_no <5-digit SR#> --run_id <int> [--is_active]
+```
+
+---
+
+## Random Strategy
+
+To run the Active Learning Strategy, execute the following command:
+
+```bash
+python prob2.py --sr_no <5-digit SR#> --run_id <int> 
+```
+
+---
+
+## Generating Plots
+
+After running the Active Learning Strategy and Random Strategy generate the required plots by executing:
+
+```bash
+python plot.py --sr_no <5-digit SR#> --supervised_accuracy <float>
+```
+
+---
+
+## Requirements
+
+To run this project, ensure you have the following installed:
+
+- Python 3.x
+- NumPy
+- SciPy
+- scikit-learn
+- Matplotlib
+
+---
+
+## References
+
+- [Sentiment140 Dataset](https://huggingface.co/datasets/stanfordnlp/sentiment140)
+- [Count Vectorizer](https://github.com/yashika51/Understanding-Count-Vectorizer)
+- [Stemming and Lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html)
+- [TF-IDF Vectorizer](https://en.wikipedia.org/wiki/Tf-idf)
+- [Gini Impurity and Entropy](https://www.geeksforgeeks.org/gini-impurity-and-entropy-in-decision-tree-ml/)
