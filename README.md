@@ -27,13 +27,9 @@ The `utils.py` file contains the implementation of a **Count Vectorizer**, which
 
 **Caution:** Since the vocabulary is large, **sparse matrices** are used to store the count vectors efficiently. This avoids memory overflow errors.
 
----
-
 ### 2. Multinomial Naive Bayes
 
 The `model.py` file contains the implementation of the **Multinomial Naive Bayes classifier**. The classifier uses the **class conditional probabilities** of each word to determine the sentiment of a given sentence.
-
----
 
 ### 3. Active Learning Strategy
 
