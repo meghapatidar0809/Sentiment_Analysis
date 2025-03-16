@@ -25,7 +25,7 @@ The text data has been preprocessed to:
 
 The `utils.py` file contains the implementation of a **Count Vectorizer**, which converts each sentence into a **k-dimensional vector**. Each dimension corresponds to a word in the vocabulary, and the value in each dimension represents the **count of the corresponding word** in the sentence.
 
-**Caution:** Since the vocabulary is large, **sparse matrices** are used to store the count vectors efficiently. This avoids memory overflow errors.
+Since the vocabulary is large, **sparse matrices** are used to store the count vectors efficiently. This avoids memory overflow errors.
 
 ### 2. Multinomial Naive Bayes
 
@@ -47,9 +47,7 @@ To train and test the Multinomial Naive Bayes classifier, run the following comm
 python prob1.py --sr no <5 digit SR#>
 ```
 
----
-
-## Active Learning Strategy
+### Active Learning Strategy
 
 To run the Active Learning Strategy, execute the following command:
 
@@ -57,9 +55,7 @@ To run the Active Learning Strategy, execute the following command:
 python prob2.py --sr_no <5-digit SR#> --run_id <int> [--is_active]
 ```
 
----
-
-## Random Strategy
+### Random Strategy
 
 To run the Active Learning Strategy, execute the following command:
 
@@ -67,9 +63,8 @@ To run the Active Learning Strategy, execute the following command:
 python prob2.py --sr_no <5-digit SR#> --run_id <int> 
 ```
 
----
 
-## Generating Plots
+### Generating Plots
 
 After running the Active Learning Strategy and Random Strategy generate the required plots by executing:
 
